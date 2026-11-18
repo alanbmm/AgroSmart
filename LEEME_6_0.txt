@@ -1,0 +1,37 @@
+AGROSMART 6.0 — IA LOCAL GRATUITA
+
+Esta versión incorpora un asistente conversacional que puede ejecutar un modelo de lenguaje directamente en el navegador mediante WebLLM + WebGPU.
+
+VENTAJAS
+- No necesita una API de OpenAI.
+- No necesita una clave secreta.
+- No hay coste por cada pregunta.
+- Puede mantener el contexto de la conversación mientras la página está abierta.
+- Recibe el contexto actual de AgroSmart (tiempo, alertas, sensores y previsión) para responder preguntas relacionadas con la aplicación.
+- Puede responder preguntas generales, matemáticas, ciencia, tecnología, etc., dentro de las capacidades del modelo elegido.
+
+PRIMER USO
+1. Publica todos los archivos en GitHub Pages.
+2. Abre la página con Internet.
+3. Ve a Asistente AgroSmart.
+4. Abre «Conectar una IA generativa».
+5. En «IA local gratuita», elige el modelo.
+6. Pulsa «Activar IA local».
+7. La primera vez se descargará el modelo y puede tardar. El navegador guardará los datos para usos posteriores cuando sea posible.
+
+MODELOS
+- IA ligera: SmolLM2-360M-Instruct-q4f16_1-MLC, aproximadamente 376 MB de memoria de modelo. Es la opción recomendada para probar en equipos modestos, pero sus respuestas son más limitadas.
+- IA mejor: SmolLM2-1.7B-Instruct-q4f16_1-MLC, aproximadamente 1,7 GB de memoria de modelo. Requiere más recursos, pero ofrece una conversación de mayor calidad.
+
+REQUISITOS
+- Navegador con WebGPU compatible.
+- Internet para descargar el modelo la primera vez.
+- El modelo se ejecuta localmente en el navegador después de descargarse.
+
+IMPORTANTE
+Esta IA no tiene la potencia de un servicio grande en la nube. Puede equivocarse y puede responder peor en español con el modelo ligero. No debe utilizarse como única fuente para decisiones importantes.
+
+El backend externo de versiones anteriores se mantiene como opción avanzada en el código, pero NO es necesario para la IA local gratuita.
+
+REFERENCIAS TÉCNICAS
+WebLLM permite ejecutar modelos LLM en el navegador mediante WebGPU y ofrece integración vía CDN. La documentación oficial indica que requiere un navegador compatible con WebGPU.
